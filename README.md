@@ -24,4 +24,52 @@ pip install mypy
 
 
 
- 
+### 파이썬 코딩스타일 가이드 
+
+
+
+파이썬  PEP 8
+
+https://www.python.org/dev/peps/pep-0008/
+
+구글 파이썬 스타일 가이드
+
+http://google.github.io/styleguide/pyguide.html
+
+
+
+팀소트?
+
+### 파이썬 딕셔너리 ( 자바의 Hash map 과 동일 )
+
+collections.defaultdict() 를 통해 선언없이 초기화할경우 디폴트값을 0으로 지정해서 객체가 추가됨
+
+Counter 객체
+
+```python
+a = [1, 2, 3, 4, 5, 5, 5, 6, 6]
+
+b = collections.Counter(a)
+
+Counter({5: 3, 6: 2, 1: 1, 2: 1, 3: 1, 4: 1})
+
+type( b )
+
+<class 'collections.Counter'>
+
+b.moust_common(2)
+[{5,3}, {6, 2}]
+
+```
+
+
+
+### 타입선언
+
+[] = list
+
+() = tuple
+
+{} = dict (딕셔너리) - map Key : value
+
+{1} = set
